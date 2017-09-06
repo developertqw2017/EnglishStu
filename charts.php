@@ -22,7 +22,7 @@
                                 <h3>
                                     Bar Chart</h3>
                                     <input type="text" class="search-query" placeholder="查词" name="voc" id="voc" value="">
-                                    <button class="add-on search-submited" id = "search_voc"><i class="icon-search"></i></button>
+                                    <button class="add-on search-submited" id = "search_voc" onclick="showUser()"><i class="icon-search"></i></button>
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content" id="voc1">
@@ -224,4 +224,59 @@ var pieData = [
 			}
 		];
 				var myPolarArea = new Chart(document.getElementById("line-chart").getContext("2d")).PolarArea(chartData);
-	</script>
+var xmlHttp;
+function showUser()
+{
+    xmlHttp=GetXmlHttpObject();
+    if (xmlHttp==null)
+    {
+        alert ("Browser does not support HTTP Request");
+        return
+
+    }
+    var url="function/config.php";
+    var voc_value = document.getElementById("voc").value;
+    console.log(voc_value);
+    url=url+"?voc="+voc_value;
+    xmlHttp.onreadystatechange=stateChanged;
+    xmlHttp.open("GET",url,true);
+    xmlHttp.send(null)
+
+}
+
+function stateChanged()
+{
+    if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+    {
+        document.getElementById("voc1").innerHTML=xmlHttp.responseText
+
+    }
+
+}
+
+function GetXmlHttpObject()
+{
+    var xmlHttp=null;
+    try
+    {
+        // Firefox, Opera 8.0+, Safari
+        xmlHttp=new XMLHttpRequest();
+
+    }
+    catch (e)
+    {
+        //Internet Explorer
+        try
+        {
+            xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+        }
+        catch (e)
+        {
+            xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    }
+    return xmlHttp;
+}
+
+</script>
+

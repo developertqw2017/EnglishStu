@@ -12,6 +12,10 @@
 <link href="css/font-awesome.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/pages/dashboard.css" rel="stylesheet">
+<link href="css/pages/faq.css" rel="stylesheet">
+<link href="css/pages/plans.css" rel="stylesheet">
+<link href="css/pages/reports.css" rel="stylesheet">
+<link href="css/pages/signin.css" rel="stylesheet">
 <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/excanvas.min.js"></script>
     <script src="js/chart.min.js" type="text/javascript"></script>
@@ -69,7 +73,7 @@
           <ul class="dropdown-menu">
             <li><a href="icons.php">Icons</a></li>
             <li><a href="faq.php">FAQ</a></li>
-            <li><a href="pricing.php">Pricing Plans</a></li>
+            <li><a onclick="pricing_action_to()">Pricing Plans</a></li>
             <li><a href="login.php">Login</a></li>
             <li><a href="signup.php">Signup</a></li>
             <li><a href="error.php">404</a></li>
@@ -88,14 +92,41 @@
 </div>
 <script type="text/javascript">
 function action_to(page){
-    xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
+    var xmlhttp1 = new XMLHttpRequest();
+
+    xmlhttp1.onreadystatechange=function()
 {
-    document.getElementById("index_page").innerHTML=xmlhttp.responseText;
+    if(xmlhttp1.readyState == 4 || xmlhttp1.readyState == "complete"){
+        document.getElementById("index_page").innerHTML=xmlhttp1.responseText;
+        var regDetectJs = /<script(.|\n)*?>(.|\n|\r\n)*?<\/script>/ig;
+        var jsContained = xmlhttp1.responseText.match(regDetectJs);
+        console.log(jsContained);
+        if(jsContained) {
+            var regGetJS = /<script(.|\n)*?>((.|\n|\r\n)*)?<\/script>/im;
+            var jsNums = jsContained.length;
+            for (var i=0; i<jsNums; i++) {
+                var jsSection = jsContained[i].match(regGetJS);
+
+                if(jsSection[2]) {
+                    if(window.execScript) {
+                        window.execScript(jsSection[2]);
+
+} else {
+    window.eval(jsSection[2]);
+
 }
-xmlhttp.open("POST",page,true);
-xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-xmlhttp.send();
+
+}
+
+}
+
+}
+
+    }
+}
+xmlhttp1.open("POST",page,true);
+xmlhttp1.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp1.send();
 };
 function index_action_to(){
     action_to("./index.php")
@@ -112,31 +143,8 @@ function chart_action_to(){
 function shortcodes_action_to(){
     action_to("./shortcodes.php");
 };
+function  pricing_action_to(){
+    action_to("./pricing.php");
+}
 </script>
-<script type="text/javascript">
-$(function(){
-        $("#search_voc").click(function(){
-   //         var e = event || window.event || arguments.callee.caller.arguments[0];
-   //         if(e && e.keyCode==13)
-   //         {
-                var cont = $("#voc").serialize();
-                $.ajax({
-                    url:'functioin/config.php',
-                        type:'post',
-                        dataType:'json',
-                        data:cont,
-                        success:function(data)
-            {
-                var str = data.voc;
-                $("#voc1").html(str);
 
-                    }
-
-                });
-   //         }else{
-   //             return ;
-   //         }
-            });
-});
-
-</script>

@@ -1,10 +1,7 @@
 <meta charset="utf-8">
 <?php
-$voc5 = $_GET["voc"];
-//$voc = "apple";
-echo $voc5;
+$voc = $_GET["voc"];
 $servername = "localhost";
-echo $servername;
 $username = "root";
 $password = "tqw503417";
 $dbname = "boots";
@@ -16,7 +13,7 @@ if($conn->connect_error){
     die("数据库连接失败: " . $conn->connect_error);
 }
 $conn->set_charset("uft8");
-$sql = "SELECT voc,pronounce_uk,pronounce_us from voc_level where voc= 'apple'";
+$sql = "SELECT voc,pronounce_uk,pronounce_us from voc_level where voc= '{$voc}'";
 //$sql = "SELECT database()";
 $result = $conn->query($sql);
 if($result->num_rows > 0){

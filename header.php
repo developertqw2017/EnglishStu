@@ -71,12 +71,12 @@
         <li><a onclick="shortcodes_action_to()"><i class="icon-code"></i><span>Shortcodes</span> </a> </li>
         <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-long-arrow-down"></i><span>Drops</span> <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="icons.php">Icons</a></li>
-            <li><a href="faq.php">FAQ</a></li>
+            <li><a onclick="icons_action_to()">Icons</a></li>
+            <li><a onclick="faq_action_to()">FAQ</a></li>
             <li><a onclick="pricing_action_to()">Pricing Plans</a></li>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="signup.php">Signup</a></li>
-            <li><a href="error.php">404</a></li>
+            <li><a onclick="login_action_to()">Login</a></li>
+            <li><a onclick="signup_action_to()">Signup</a></li>
+            <li><a onclick="error_action_to()">404</a></li>
           </ul>
         </li>
       </ul>
@@ -143,8 +143,28 @@ function chart_action_to(){
 function shortcodes_action_to(){
     action_to("./shortcodes.php");
 };
-function  pricing_action_to(){
+function pricing_action_to(){
     action_to("./pricing.php");
+}
+function faq_action_to()
+{
+    action_to("./faq.php");
+}
+function error_action_to()
+{
+    action_to("./error.php");
+}
+function icons_action_to()
+{
+    action_to("./icons.php");
+}
+function login_action_to()
+{
+    action_to("./login.php");
+}
+function signup_action_to()
+{
+    action_to("./signup.php");
 }
 </script>
 

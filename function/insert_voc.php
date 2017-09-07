@@ -11,8 +11,8 @@
     echo "该词已有";
     $conn->close();
 }else{
-    $sql = "insert voc_level values(NULL,'{$voc_in}','{$pro_uk}',4,'{$pro_uk}','{$pro_us}','{$trans_in}')";
-    $conn->query($sql);
+    $sql = "insert voc_level values(NULL,'{$voc_in}',4,'{$pro_uk}','{$pro_us}','{$trans_in}')";
+    $result = $conn->query($sql);
     echo "添加成功！";
 }
 ?>

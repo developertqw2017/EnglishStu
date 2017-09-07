@@ -44,7 +44,7 @@
  <!-- /plan-features -->
 
 								<div class="plan-actions">
-									<a href="javascript:;" class="btn">添加</a>
+									<a class="btn" onclick="voc_insert()">添加</a>
 								</div> <!-- /plan-actions -->
 
 							</div> <!-- /plan -->
@@ -146,4 +146,63 @@
 	</div> <!-- /main-inner -->
 
 </div> <!-- /main -->
+<script>
+var xmlHttp;
+function voc_insert()
+{
+        var voc_in = document.getElementById("voc_in").value;
+        var pro_in_uk = document.getElementById("pro_in_uk").value;
+        var pro_in_us = document.getElementById("pro_in_us").value;
+        var trans_in = document.getElementById("trans_in").value;
+    xmlHttp=GetXmlHttpObject();
+    if (xmlHttp==null)
+    {
+        alert ("Browser does not support HTTP Request");
+        return
+
+    }
+    var url="function/insert_voc.php";
+    url=url+"?voc_in="+voc_in+"&pro_in_uk="+pro_in_uk+"&pro_in_us="+pro_in_us+"&trans_in="+trans_in;
+    xmlHttp.onreadystatechange=stateChanged;
+    xmlHttp.open("GET",url,true);
+    xmlHttp.send(null)
+
+}
+
+function stateChanged()
+{
+    if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+    {
+        alert(xmlHttp.responseText);
+
+    }
+
+}
+
+function GetXmlHttpObject()
+{
+    var xmlHttp=null;
+    try
+    {
+        // Firefox, Opera 8.0+, Safari
+        xmlHttp=new XMLHttpRequest();
+
+    }
+    catch (e)
+    {
+        //Internet Explorer
+        try
+        {
+            xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+        }
+        catch (e)
+        {
+            xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    }
+    return xmlHttp;
+}
+
+
+</script>
 

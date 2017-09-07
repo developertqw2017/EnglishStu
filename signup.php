@@ -2,7 +2,6 @@
 
 	<div class="content clearfix">
 
-		<form action="#" method="post">
 
 			<h1>加入我们</h1>
 
@@ -17,17 +16,17 @@
 
 				<div class="field">
 					<label for="email">邮箱地址:</label>
-					<input type="text" id="email" name="email" value="" placeholder="邮箱" class="login"/>
+					<input type="text" id="email" name="email" value="" placeholder="邮箱" class="login" onblur="verify_email()"/>
 				</div> <!-- /field -->
 
 				<div class="field">
 					<label for="password">密码:</label>
-					<input type="password" id="password" name="password" value="" placeholder="密码" class="login"/>
+					<input type="text" id="password" name="password" value="" placeholder="密码" class="login"/>
 				</div> <!-- /field -->
 
 				<div class="field">
 					<label for="confirm_password">重复密码:</label>
-					<input type="password" id="confirm_password" name="confirm_password" value="" placeholder="重复密码" class="login"/>
+					<input type="text" id="confirm_password" name="confirm_password" value="" placeholder="重复密码" class="login"/>
 				</div> <!-- /field -->
 
 			</div> <!-- /login-fields -->
@@ -43,7 +42,6 @@
 
 			</div> <!-- .actions -->
 
-		</form>
 
 	</div> <!-- /content -->
 
@@ -66,11 +64,12 @@ function signup()
         return
 
     }
-    var url="function/config.php";
+    var url="function/signup.php";
     var nickname = document.getElementById("nickname").value;
     var email = document.getElementById("email").value;
-    var password = document.getElementById("password").valuel;
-    url=url+"?nickname="+voc_value+"&email="+email+"&password="+password;
+    var password = document.getElementById("password").value;
+    url=url+"?nickname="+nickname+"&email="+email+"&password="+password;
+    console.log(url);
     xmlHttp.onreadystatechange=stateChanged;
     xmlHttp.open("GET",url,true);
     xmlHttp.send(null)
@@ -81,7 +80,7 @@ function stateChanged()
 {
     if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
     {
-        alert("注册成功");
+        alert(xmlHttp.responseText);
     }
 
 }
@@ -110,5 +109,15 @@ function GetXmlHttpObject()
     return xmlHttp;
 }
 
-
+function verify_email()
+{
+var email_current = document.getElementById("email").value;
+var regex = /^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g;
+if(!regex.test(email_current))
+{
+var em = document.getElementById("email");
+em.value=null;
+em.placeholder="检查您的邮箱地址!";
+}
+}
 </script>

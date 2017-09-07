@@ -234,7 +234,7 @@ function showUser()
         return
 
     }
-    var url="function/config.php";
+    var url="function/get_voc.php";
     var voc_value = document.getElementById("voc").value;
     console.log(voc_value);
     url=url+"?voc="+voc_value;

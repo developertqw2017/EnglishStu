@@ -4,36 +4,30 @@
 
 		<form action="#" method="post">
 
-			<h1>Signup for Free Account</h1>
+			<h1>加入我们</h1>
 
 			<div class="login-fields">
 
-				<p>Create your free account:</p>
+				<p>创建你的账户:</p>
 
 				<div class="field">
-					<label for="firstname">First Name:</label>
-					<input type="text" id="firstname" name="firstname" value="" placeholder="First Name" class="login" />
+					<label for="firstname">昵称:</label>
+					<input type="text" id="nickname" name="nickname" value="" placeholder="昵称" class="login" />
 				</div> <!-- /field -->
 
 				<div class="field">
-					<label for="lastname">Last Name:</label>
-					<input type="text" id="lastname" name="lastname" value="" placeholder="Last Name" class="login" />
-				</div> <!-- /field -->
-
-
-				<div class="field">
-					<label for="email">Email Address:</label>
-					<input type="text" id="email" name="email" value="" placeholder="Email" class="login"/>
+					<label for="email">邮箱地址:</label>
+					<input type="text" id="email" name="email" value="" placeholder="邮箱" class="login"/>
 				</div> <!-- /field -->
 
 				<div class="field">
-					<label for="password">Password:</label>
-					<input type="password" id="password" name="password" value="" placeholder="Password" class="login"/>
+					<label for="password">密码:</label>
+					<input type="password" id="password" name="password" value="" placeholder="密码" class="login"/>
 				</div> <!-- /field -->
 
 				<div class="field">
-					<label for="confirm_password">Confirm Password:</label>
-					<input type="password" id="confirm_password" name="confirm_password" value="" placeholder="Confirm Password" class="login"/>
+					<label for="confirm_password">重复密码:</label>
+					<input type="password" id="confirm_password" name="confirm_password" value="" placeholder="重复密码" class="login"/>
 				</div> <!-- /field -->
 
 			</div> <!-- /login-fields -->
@@ -42,10 +36,10 @@
 
 				<span class="login-checkbox">
 					<input id="Field" name="Field" type="checkbox" class="field login-checkbox" value="First Choice" tabindex="4" />
-					<label class="choice" for="Field">Agree with the Terms & Conditions.</label>
+					<label class="choice" for="Field">同意的条款和条件.</label>
 				</span>
 
-				<button class="button btn btn-primary btn-large">Register</button>
+				<button class="button btn btn-primary btn-large" onclick="signup()">注册</button>
 
 			</div> <!-- .actions -->
 
@@ -61,4 +55,60 @@
 	Already have an account? <a href="login.php">Login to your account</a>
 </div> <!-- /login-extra -->
 
+<script>
+var xmlHttp;
+function signup()
+{
+    xmlHttp=GetXmlHttpObject();
+    if (xmlHttp==null)
+    {
+        alert ("Browser does not support HTTP Request");
+        return
 
+    }
+    var url="function/config.php";
+    var nickname = document.getElementById("nickname").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").valuel;
+    url=url+"?nickname="+voc_value+"&email="+email+"&password="+password;
+    xmlHttp.onreadystatechange=stateChanged;
+    xmlHttp.open("GET",url,true);
+    xmlHttp.send(null)
+
+}
+
+function stateChanged()
+{
+    if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+    {
+        alert("注册成功");
+    }
+
+}
+
+function GetXmlHttpObject()
+{
+    var xmlHttp=null;
+    try
+    {
+        // Firefox, Opera 8.0+, Safari
+        xmlHttp=new XMLHttpRequest();
+
+    }
+    catch (e)
+    {
+        //Internet Explorer
+        try
+        {
+            xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+        }
+        catch (e)
+        {
+            xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    }
+    return xmlHttp;
+}
+
+
+</script>

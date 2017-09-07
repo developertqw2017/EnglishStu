@@ -7,6 +7,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600"
         rel="stylesheet">
 <link href="css/font-awesome.css" rel="stylesheet">
@@ -16,6 +18,7 @@
 <link href="css/pages/plans.css" rel="stylesheet">
 <link href="css/pages/reports.css" rel="stylesheet">
 <link href="css/pages/signin.css" rel="stylesheet">
+<link href="css/pages/pricing.css" rel="stylesheet">
 <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/excanvas.min.js"></script>
     <script src="js/chart.min.js" type="text/javascript"></script>
@@ -64,18 +67,18 @@
   <div class="subnavbar-inner">
     <div class="container">
       <ul class="mainnav">
-        <li class="active"><a onclick="index_action_to()"><i class="icon-dashboard"></i><span onclick="index_action_to()">Dashboard</span> </a> </li>
-        <li><a onclick="reports_action_to()"><i class="icon-list-alt"></i><span>Reports</span> </a> </li>
+        <li class="active"><a onclick="index_action_to()"><i class="icon-dashboard"></i><span onclick="index_action_to()">社交</span> </a> </li>
+        <li><a onclick="reports_action_to()"><i class="icon-list-alt"></i><span>新鲜事</span> </a> </li>
         <li><a onclick="guidely_action_to()"><i class="icon-facetime-video"></i><span>看视频</span> </a></li>
-        <li><a onclick="chart_action_to()"><i class="icon-bar-chart"></i><span>Charts</span> </a> </li>
+        <li><a onclick="chart_action_to()"><i class="icon-bar-chart"></i><span>记单词</span> </a> </li>
         <li><a onclick="shortcodes_action_to()"><i class="icon-code"></i><span>Shortcodes</span> </a> </li>
-        <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-long-arrow-down"></i><span>Drops</span> <b class="caret"></b></a>
+        <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-long-arrow-down"></i><b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a onclick="icons_action_to()">Icons</a></li>
-            <li><a onclick="faq_action_to()">FAQ</a></li>
-            <li><a onclick="pricing_action_to()">Pricing Plans</a></li>
-            <li><a onclick="login_action_to()">Login</a></li>
-            <li><a onclick="signup_action_to()">Signup</a></li>
+            <li><a onclick="faq_action_to()">问答</a></li>
+            <li><a onclick="pricing_action_to()">添加单词/文章1</a></li>
+            <li><a onclick="login_action_to()">登录</a></li>
+            <li><a onclick="signup_action_to()">注册</a></li>
             <li><a onclick="error_action_to()">404</a></li>
           </ul>
         </li>

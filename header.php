@@ -169,5 +169,6 @@ function signup_action_to()
 {
     action_to("./signup.php");
 }
+index_action_to();
 </script>
 

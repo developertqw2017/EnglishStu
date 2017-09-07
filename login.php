@@ -1,7 +1,7 @@
 <div class="account-container">
 
 	<div class="content clearfix">
-
+i   <form method="get" action="function/login.php">
 			<h2>欢迎来到英语学习助手</h2>
 
 			<div class="login-fields">
@@ -31,7 +31,7 @@
 
 			</div> <!-- .actions -->
 
-
+</form>
 
 
 	</div> <!-- /content -->
@@ -63,7 +63,6 @@ function stateChanged()
 {
     if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
     {
-        alert(xmlHttp.responseText);
     }
 
 }

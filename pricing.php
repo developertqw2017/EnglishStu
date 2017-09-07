@@ -12,7 +12,7 @@
 
 					<div class="widget-header">
 						<i class="icon-th-large"></i>
-						<h3>Choose Your Plan</h3>
+                        <h3>添加</h3>
 					</div> <!-- /widget-header -->
 
 					<div class="widget-content" style="background-color:#d0e4fe">
@@ -24,11 +24,10 @@
 						        <div class="plan-header">
 
 						        	<div class="plan-title">
-						        		First Agent
+						        		添加单词
 					        		</div> <!-- /plan-title -->
-
 						            <div class="plan-price">
-					                	$0<span class="term">For Life</span>
+					                	0<span class="term">已添加/修改</span>
 									</div> <!-- /plan-price -->
 
 						        </div> <!-- /plan-header -->
@@ -55,12 +54,12 @@
 					        <div class="plan green">
 						        <div class="plan-header">
 
-						        	<div class="plan-title">
-						        		Flex Package
+                                    <div class="plan-title">
+                                        添加例句
 					        		</div> <!-- /plan-title -->
 
 						            <div class="plan-price">
-					                	$5<span class="term">Per Agent</span>
+					                	5<span class="term">已添加</span>
 									</div> <!-- /plan-price -->
 
 						        </div> <!-- /plan-header -->
@@ -86,11 +85,11 @@
 						        <div class="plan-header">
 
 						        	<div class="plan-title">
-						        		Virtual Agent
+						        		添加文章
 					        		</div> <!-- /plan-title -->
 
 						            <div class="plan-price">
-					                	$30<span class="term">Per Month</span>
+					                	30<span class="term">已添加</span>
 									</div> <!-- /plan-price -->
 
 						        </div> <!-- /plan-header -->

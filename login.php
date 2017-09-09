@@ -1,21 +1,21 @@
 <div class="account-container">
 
 	<div class="content clearfix">
-i   <form method="get" action="function/login.php">
+    <form method="get" action="function/login.php">
 			<h2>欢迎来到英语学习助手</h2>
 
 			<div class="login-fields">
 
-				<p>Please provide your details</p>
+				<p>&emsp;</p>
 
 				<div class="field">
 					<label for="username">Username</label>
-					<input type="text" id="username" name="username" value="" placeholder="Username" class="login username-field" />
+					<input type="text" id="username" name="username" value="" placeholder="账户" class="login username-field" />
 				</div> <!-- /field -->
 
 				<div class="field">
 					<label for="password">Password:</label>
-					<input type="text" id="password" name="password" value="" placeholder="Password" class="login password-field"/>
+					<input type="text" id="password" name="password" value="" placeholder="密码" class="login password-field"/>
 				</div> <!-- /password -->
 
 			</div> <!-- /login-fields -->

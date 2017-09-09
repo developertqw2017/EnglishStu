@@ -1,10 +1,10 @@
- <script type="text/javascript">
+<script type="text/javascript">
 
-    function action_to1(page){
-        xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange=function()
-        {
-            document.getElementById("index_page").innerHTML=xmlhttp.responseText;
+function action_to1(page){
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function()
+{
+    document.getElementById("index_page").innerHTML=xmlhttp.responseText;
         }
         xmlhttp.open("POST",page,true);
         xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
@@ -15,7 +15,7 @@
         <div class="main-inner">
             <div class="container">
                 <div class="row">
-                    <div class="span7">
+                    <div class="span6">
                         <div class="widget">
                             <div class="widget-header">
                                 <i class="icon-bar-chart"></i>
@@ -27,6 +27,12 @@
                             <!-- /widget-header -->
                             <div class="widget-content" id="voc1">
                             <!-- /bar-chart -->
+                               <div id="bdtts_div_id">
+                                    <audio id="tts_autio_id" autoplay="autoplay">
+                                    <source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=5&text=" type="audio/mpeg">
+                                    <embed id="tts_embed_id" height="0" width="0" src="">
+                                    </audio>
+                                </div>
                             </div>
                             <!-- /widget-content -->
                         </div>
@@ -62,7 +68,7 @@
                         <!-- /widget -->
                     </div>
                     <!-- /span6 -->
-                    <div class="span4">
+                    <div class="span6">
                         <div class="widget">
                             <div class="widget-header">
                                 <i class="icon-bar-chart"></i>
@@ -108,51 +114,51 @@
 ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 <script>
-            var doughnutData = [
-				{
-				    value: 30,
-				    color: "#F7464A"
-				},
-				{
-				    value: 50,
-				    color: "#46BFBD"
-				},
-				{
-				    value: 100,
-				    color: "#FDB45C"
-				},
-				{
-				    value: 40,
-				    color: "#949FB1"
-				},
-				{
-				    value: 120,
-				    color: "#4D5360"
-				}
+var doughnutData = [
+{
+    value: 30,
+        color: "#F7464A"
+                },
+{
+    value: 50,
+        color: "#46BFBD"
+                },
+{
+    value: 100,
+        color: "#FDB45C"
+                },
+{
+    value: 40,
+        color: "#949FB1"
+                },
+{
+    value: 120,
+        color: "#4D5360"
+                }
 
-			];
+            ];
 
         var myDoughnut = new Chart(document.getElementById("donut-chart").getContext("2d")).Doughnut(doughnutData);
 
 
         var lineChartData = {
             labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-				{
-				    fillColor: "rgba(220,220,220,0.5)",
-				    strokeColor: "rgba(220,220,220,1)",
-				    pointColor: "rgba(220,220,220,1)",
-				    pointStrokeColor: "#fff",
-				    data: [65, 59, 90, 81, 56, 55, 40]
-				},
-				{
-				    fillColor: "rgba(151,187,205,0.5)",
-				    strokeColor: "rgba(151,187,205,1)",
-				    pointColor: "rgba(151,187,205,1)",
-				    pointStrokeColor: "#fff",
-				    data: [28, 48, 40, 19, 96, 27, 100]
-				}
-			]
+                datasets: [
+{
+    fillColor: "rgba(220,220,220,0.5)",
+        strokeColor: "rgba(220,220,220,1)",
+        pointColor: "rgba(220,220,220,1)",
+        pointStrokeColor: "#fff",
+        data: [65, 59, 90, 81, 56, 55, 40]
+                },
+{
+    fillColor: "rgba(151,187,205,0.5)",
+        strokeColor: "rgba(151,187,205,1)",
+        pointColor: "rgba(151,187,205,1)",
+        pointStrokeColor: "#fff",
+        data: [28, 48, 40, 19, 96, 27, 100]
+                }
+            ]
 
         }
 
@@ -161,68 +167,68 @@
 
         var barChartData = {
             labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-				{
-				    fillColor: "rgba(220,220,220,0.5)",
-				    strokeColor: "rgba(220,220,220,1)",
-				    data: [65, 59, 90, 81, 56, 55, 40]
-				},
-				{
-				    fillColor: "rgba(151,187,205,0.5)",
-				    strokeColor: "rgba(151,187,205,1)",
-				    data: [28, 48, 40, 19, 96, 27, 100]
-				}
-			]
+                datasets: [
+{
+    fillColor: "rgba(220,220,220,0.5)",
+        strokeColor: "rgba(220,220,220,1)",
+        data: [65, 59, 90, 81, 56, 55, 40]
+                },
+{
+    fillColor: "rgba(151,187,205,0.5)",
+        strokeColor: "rgba(151,187,205,1)",
+        data: [28, 48, 40, 19, 96, 27, 100]
+                }
+            ]
 
         }
 
 var myLine = new Chart(document.getElementById("bar-chart").getContext("2d")).Bar(barChartData);
 
 var pieData = [
-				{
-				    value: 30,
-				    color: "#F38630"
-				},
-				{
-				    value: 50,
-				    color: "#E0E4CC"
-				},
-				{
-				    value: 100,
-				    color: "#69D2E7"
-				}
+{
+    value: 30,
+        color: "#F38630"
+                },
+{
+    value: 50,
+        color: "#E0E4CC"
+                },
+{
+    value: 100,
+        color: "#69D2E7"
+                }
 
-			];
+            ];
 
-				var myPie = new Chart(document.getElementById("pie-chart").getContext("2d")).Pie(pieData);
+                var myPie = new Chart(document.getElementById("pie-chart").getContext("2d")).Pie(pieData);
 
-				var chartData = [
-			{
-			    value: Math.random(),
-			    color: "#D97041"
-			},
-			{
-			    value: Math.random(),
-			    color: "#C7604C"
-			},
-			{
-			    value: Math.random(),
-			    color: "#21323D"
-			},
-			{
-			    value: Math.random(),
-			    color: "#9D9B7F"
-			},
-			{
-			    value: Math.random(),
-			    color: "#7D4F6D"
-			},
-			{
-			    value: Math.random(),
-			    color: "#584A5E"
-			}
-		];
-				var myPolarArea = new Chart(document.getElementById("line-chart").getContext("2d")).PolarArea(chartData);
+                var chartData = [
+{
+    value: Math.random(),
+        color: "#D97041"
+            },
+{
+    value: Math.random(),
+        color: "#C7604C"
+            },
+{
+    value: Math.random(),
+        color: "#21323D"
+            },
+{
+    value: Math.random(),
+        color: "#9D9B7F"
+            },
+{
+    value: Math.random(),
+        color: "#7D4F6D"
+            },
+{
+    value: Math.random(),
+        color: "#584A5E"
+            }
+        ];
+                var myPolarArea = new Chart(document.getElementById("line-chart").getContext("2d")).PolarArea(chartData);
 var xmlHttp;
 function showUser()
 {
@@ -230,7 +236,7 @@ function showUser()
     if (xmlHttp==null)
     {
         alert ("Browser does not support HTTP Request");
-        return
+        return;
 
     }
     var url="function/get_voc.php";
@@ -239,7 +245,7 @@ function showUser()
     url=url+"?voc="+voc_value;
     xmlHttp.onreadystatechange=stateChanged;
     xmlHttp.open("GET",url,true);
-    xmlHttp.send(null)
+    xmlHttp.send(null);
 
 }
 
@@ -247,7 +253,7 @@ function stateChanged()
 {
     if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
     {
-        document.getElementById("voc1").innerHTML=xmlHttp.responseText
+        document.getElementById("voc1").innerHTML=xmlHttp.responseText;
 
     }
 
@@ -276,6 +282,23 @@ function GetXmlHttpObject()
     }
     return xmlHttp;
 }
+function doTTS(){
+    var ttsDiv = document.getElementById('bdtts_div_id');
+    var ttsAudio = document.getElementById('tts_autio_id');
+    var ttsText = document.getElementById('baidu_player').innerHTML;
+
+    ttsDiv.removeChild(ttsAudio);
+    var au1 ='<audio id="tts_autio_id" autoplay="autoplay">';
+    var sss ='<source id="tts_source_id "src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=5&text='+ttsText+'" type="audio/mpeg">';
+    var eee='<embed id="tts_embed_id" height="0" width="0" src="">';
+    var au2 = '</audio>';
+    ttsDiv.innerHTML = au1 + sss + eee +au2;
+
+    ttsAudio = document.getElementById('tts_autio_id');
+
+//    ttsAudio.play();
+}
+
 
 </script>
 

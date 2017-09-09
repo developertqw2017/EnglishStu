@@ -10,19 +10,19 @@
 
 	      	<div class="info-box">
                <div class="row-fluid stats-box">
-                  <div class="span4">
+                  <div class="span6">
                   	<div class="stats-box-title">Vizitor</div>
                     <div class="stats-box-all-info"><i class="icon-user" style="color:#3366cc;"></i> 555K</div>
                     <div class="wrap-chart"><div id="visitor-stat" class="chart" style="padding: 0px; position: relative;"><canvas id="bar-chart1" class="chart-holder" height="150" width="325"></canvas></div></div>
                   </div>
 
-                  <div class="span4">
+                  <div class="span6">
                     <div class="stats-box-title">Likes</div>
                     <div class="stats-box-all-info"><i class="icon-thumbs-up"  style="color:#F30"></i> 66.66</div>
                     <div class="wrap-chart"><div id="order-stat" class="chart" style="padding: 0px; position: relative;"><canvas id="bar-chart2" class="chart-holder" height="150" width="325"></canvas></div></div>
                   </div>
 
-                  <div class="span4">
+                  <div class="span6">
                     <div class="stats-box-title">Orders</div>
                     <div class="stats-box-all-info"><i class="icon-shopping-cart" style="color:#3C3"></i> 15.55</div>
                     <div class="wrap-chart">
@@ -44,7 +44,7 @@
 
 	      <div class="row">
 
-	      	<div class="span5">
+	      	<div class="span6">
 
 	      		<div class="widget">
 

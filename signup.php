@@ -50,7 +50,7 @@
 
 <!-- Text Under Box -->
 <div class="login-extra">
-	Already have an account? <a href="login.php">Login to your account</a>
+	已有账号? <a onclick="login_action_to()">去登录</a>
 </div> <!-- /login-extra -->
 
 <script>

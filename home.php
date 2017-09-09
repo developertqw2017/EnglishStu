@@ -123,7 +123,6 @@
           <!-- /widget -->
         </div>
         <!-- /span6 -->
-        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
         <div class="span6">
           <div class="widget">
             <div class="widget-header"> <i class="icon-bookmark"></i>

@@ -15,7 +15,7 @@
         <div class="main-inner">
             <div class="container">
                 <div class="row">
-                    <div class="span6">
+                    <div class="span7">
                         <div class="widget">
                             <div class="widget-header">
                                 <i class="icon-bar-chart"></i>
@@ -34,8 +34,7 @@
                         <div class="widget">
                             <div class="widget-header">
                                 <i class="icon-bar-chart"></i>
-                                <h3>
-                                    Line Chart</h3>
+                                <h3>更多例句</h3>
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content">
@@ -50,7 +49,7 @@
                             <div class="widget-header">
                                 <i class="icon-bar-chart"></i>
                                 <h3>
-                                    Pie Chart</h3>
+                                    笔记</h3>
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content">
@@ -63,7 +62,7 @@
                         <!-- /widget -->
                     </div>
                     <!-- /span6 -->
-                    <div class="span6">
+                    <div class="span4">
                         <div class="widget">
                             <div class="widget-header">
                                 <i class="icon-bar-chart"></i>

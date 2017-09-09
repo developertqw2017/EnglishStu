@@ -51,7 +51,7 @@
 					    </div> <!-- /plan-container -->
 
 
-
+						<div class="pricing-plans plans-3">
 					    <div class="plan-container">
 					        <div class="plan green">
 						        <div class="plan-header">
@@ -81,13 +81,21 @@
 
 </strong></li>
                                     </ul>
-                                    <textarea class="form-control input-sm" style="resize:vertical" rows="3"></textarea>
-                                 </div> <!-- /plan-features -->
+                                    <form class="bs-example bs-example-form" role="form">
+									<div class="input-group"><lable class="input-group-addon" for="voc_sen">单词名</lable> <input type="text" class="form-control" name="voc_sen" id="voc_sen"></div>
+                                    <textarea class="form-control input-sm" style="resize:vertical" id="sentence" name="sen_insert" rows="3"></textarea>
+                                    </form>
+                                </div> <!-- /plan-features -->
+                                <div class="plan-actions">
+								<a class="btn" onclick="sentence_insert()">提交</a>
+								</div> <!-- /plan-actions -->
 
 
 							</div> <!-- /plan -->
-					    </div> <!-- /plan-container -->
+                        </div> <!-- /plan-container -->
+                        </div>
 
+                        <div class="pricing-plans plans-3">
 					    <div class="plan-container">
 					        <div class="plan">
 						        <div class="plan-header">
@@ -106,17 +114,16 @@
                                                                         <ul>
                                         <li><strong>&emsp;&emsp;
 &emsp;
-&emsp;
-&emsp;
 添&emsp;
 加&emsp;
 文&emsp;
-章&emsp;&emsp;&emsp;&emsp;&emsp;
+章&emsp;&emsp;&emsp;
 
 
 
 </strong></li>
                                     </ul>
+                                    <div class="input-group"><lable class="input-group-addon" for="voc_ess">单词名</lable> <input type="text" class="form-control" name="voc_ess" id="voc_ess"></div>
                                     <textarea class="form-control input-lg" style="resize: vertical" rows="3"></textarea>
                                 </div>
                                 </div> <!-- /plan-features -->
@@ -128,7 +135,7 @@
 							</div> <!-- /plan -->
 
 					    </div> <!-- /plan-container -->
-
+                        </div><!-- /pricing-plans -->
 
 					</div> <!-- /pricing-plans -->
 
@@ -165,8 +172,26 @@ function voc_insert()
     url=url+"?voc_in="+voc_in+"&pro_in_uk="+pro_in_uk+"&pro_in_us="+pro_in_us+"&trans_in="+trans_in;
     xmlHttp.onreadystatechange=stateChanged;
     xmlHttp.open("GET",url,true);
-    xmlHttp.send(null)
+    xmlHttp.send(null);
 
+}
+
+function sentence_insert()
+{
+    var sentence = document.getElementById("sentence").value;
+    var voc_sen = document.getElementById("voc_sen").value;
+    xmlHttp = GetXmlHttpObject();
+        if (xmlHttp==null)
+    {
+        alert ("Browser does not support HTTP Request");
+        return
+
+    }
+    var url="function/insert_exm_sentence.php";
+    url=url+"?sentence_in="+sentence+"&voc_sen="+voc_sen;
+    xmlHttp.onreadystatechange=stateChanged;
+    xmlHttp.open("GET",url,true);
+    xmlHttp.send(null);
 }
 
 function stateChanged()

@@ -16,19 +16,22 @@ if($result->num_rows > 0){
 //        }else{
 //            echo $row["database()"];
 //        }
-        $sql = "SELECT exm_sentence,sen_translation from exm_sentence where exm_sentence_id = 1 ";
+        $sql = "SELECT exm_sentence,sen_translation from exm_sentence where exm_sentence_id = {$row["voc_id"]} ";
         $result1 = $conn->query($sql);
         if($result1->num_rows > 0)
         {
-            while($row1 = $result1->fetch_assoc())
+            $i=1;
+            while($row1 = $result1->fetch_assoc() )
             {
+                if($i<4){
                 echo "<div>{$row1["exm_sentence"]}</div>";
                 echo "<div>{$row1["sen_translation"]}</div>";
+                }
+                $i =$i + 1;
             }
-            }else{
-                echo "暂时没有例句";
-                echo "1";
-            }
+        }else{
+            echo "暂时没有例句";
+        }
     }
 }else{
     echo "xxxxxxxxxxxx";

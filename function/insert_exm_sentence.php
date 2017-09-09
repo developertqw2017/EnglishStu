@@ -1,7 +1,7 @@
 <?php
 require_once 'config.php';
-$voc_in = $_GET["voc_in"];
-$sentence = $_GET["sentence_in"];
+$voc_in = $_GET["voc_sen"];
+$sentence = $_GET["sen_insert"];
 $sql = "select m.voc, n.exm_sentence,n.n.exm_sentence_id from voc_level m, exm_sentence n where m.voc_id = n.exm_sentence_id and m.voc = {$voc_in}";
 $result = $conn->query($sql);
 if($result -> num_rows = 0)
@@ -12,14 +12,14 @@ if($result -> num_rows = 0)
     {
         while($row = $result->fetch_assoc())
         {
-            $sql = "insert exm_sentence values('{$exm_sentence}','{$exm_sentence_id}')";
+            $sql = "insert exm_sentence values('{$sentence}','{$row["exm_sentence_id"]}')";
             $conn->query($sql);
             echo "添加成功";
 
 }
 
 }else{
-    echo "该单词还未添加"；
+    echo "该单词还未添加";
 
 }
 

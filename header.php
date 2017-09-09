@@ -71,7 +71,7 @@
         <li><a onclick="reports_action_to()"><i class="icon-list-alt"></i><span>新鲜事</span> </a> </li>
         <li><a onclick="guidely_action_to()"><i class="icon-facetime-video"></i><span>看视频</span> </a></li>
         <li><a onclick="chart_action_to()"><i class="icon-bar-chart"></i><span>记单词</span> </a> </li>
-        <li><a onclick="shortcodes_action_to()"><i class="icon-code"></i><span>Shortcodes</span> </a> </li>
+        <li><a onclick="shortcodes_action_to()"><i class="icon-code"></i><span>测验</span> </a> </li>
         <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-long-arrow-down"></i><b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a onclick="icons_action_to()">Icons</a></li>

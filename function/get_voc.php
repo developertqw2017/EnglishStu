@@ -6,7 +6,7 @@ $sql = "SELECT voc_id,voc,pronounce_uk,pronounce_us,translates from voc_level wh
 $result = $conn->query($sql);
 if($result->num_rows > 0){
     while($row = $result->fetch_assoc()){
-        echo "<h1><span id="baidu_player">{$row["voc"]}</span>      <i class="icon-large icon-volume-up"></i>   <small>英{$row["pronounce_uk"]} 美{$row["pronounce_us"]}</small></h1>";
+        echo "<h1><span id='baidu_player'>{$row["voc"]}</span>      <i class='icon-large icon-volume-up'></i>   <small>英{$row["pronounce_uk"]} 美{$row["pronounce_us"]}</small></h1>";
         echo "<h2>{$row["translates"]}</h2>";
         //        echo "<h1 class="content pull-left" style="">abandon <small>/ə'bændən/</small></h1>";
         //    echo empty($row["database()"]);

@@ -24,15 +24,15 @@ function action_to1(page){
                                     <input type="text" class="search-query" placeholder="查词" name="voc" id="voc" value="">
                                     <button class="add-on search-submited" id = "search_voc" onclick="showUser()"><i class="icon-search"></i></button>
                             </div>
-                            <!-- /widget-header -->
-                            <div class="widget-content" id="voc1">
-                            <!-- /bar-chart -->
-                               <div id="bdtts_div_id">
+                                <div id="bdtts_div_id">
                                     <audio id="tts_autio_id" autoplay="autoplay">
                                     <source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=5&text=" type="audio/mpeg">
                                     <embed id="tts_embed_id" height="0" width="0" src="">
                                     </audio>
                                 </div>
+                           <!-- /widget-header -->
+                            <div class="widget-content" id="voc1">
+                            <!-- /bar-chart -->
                             </div>
                             <!-- /widget-content -->
                         </div>
@@ -296,7 +296,7 @@ function doTTS(){
 
     ttsAudio = document.getElementById('tts_autio_id');
 
-//    ttsAudio.play();
+    ttsAudio.play();
 }
 
 

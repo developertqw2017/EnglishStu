@@ -18,11 +18,11 @@
                     <div class="widget-content" style="background-color:#d0e4fe">
                         <div class="row">
                         <ul class="nav nav-tabs">
-                            <li>
+                            <li class="active">
                                 <a href="#formcontrols" data-toggle="tab">添加</a>
                             </li>
-                            <li  class="active"><a href="#jscontrols" data-toggle="tab">修改</a></li>
-                            <li class="active"><a href="#deletejs" data-toggle="tab">删除</a></li>
+                            <li><a href="#jscontrols" data-toggle="tab">修改</a></li>
+                            <li><a href="#deletejs" data-toggle="tab">删除</a></li>
                         </ul>
 
                         </div>

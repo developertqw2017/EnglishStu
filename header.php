@@ -45,7 +45,7 @@
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
                             class="icon-user"></i> by 田茜文 <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="javascript:;">个人信息</a></li>
+              <li><a onclick="shortcodes_action_to()">个人信息</a></li>
               <li><a href="javascript:;">退出</a></li>
             </ul>
           </li>

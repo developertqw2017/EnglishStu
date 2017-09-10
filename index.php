@@ -6,13 +6,12 @@
         <div class="span6">
           <div class="widget widget-nopad">
             <div class="widget-header"> <i class="icon-list-alt"></i>
-              <h3> Today's Stats</h3>
+              <h3>今日已完成</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
               <div class="widget big-stats-container">
                 <div class="widget-content">
-                  <h6 class="bigstats">A fully responsive premium quality admin template built on Twitter Bootstrap by <a href="http://www.by EGrappler" target="_blank">by EGrappler</a>.  These are some dummy lines to fill the area.</h6>
                   <div id="big_stats" class="cf">
                     <div class="stat"> <i class="icon-anchor"></i> <span class="value">851</span> </div>
                     <!-- .stat -->
@@ -39,6 +38,10 @@
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
+                  <h3 class="bigstats">The mediocre teacher tells. The good teacher explains. The superior teacher demonstrates. The great teacher inspires.
+<br/>平庸的老师向人告知，不错的老师向人解释，优秀的老师向人演示，伟大的老师给人启迪。</h3>
+                    <span style="float:right;font-size:16px;color:#209e85">--William Ward</span>
+
               <div id='calendar'>
               </div>
             </div>
@@ -132,10 +135,10 @@
             <!-- /widget-header -->
             <div class="widget-content">
               <div class="shortcuts"> <a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-list-alt"></i><span
-                                        class="shortcut-label">Apps</span> </a><a href="javascript:;" class="shortcut"><i
-                                            class="shortcut-icon icon-bookmark"></i><span class="shortcut-label">Bookmarks</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">Reports</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-comment"></i><span class="shortcut-label">Comments</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-user"></i><span
-                                                class="shortcut-label">Users</span> </a><a href="javascript:;" class="shortcut"><i
-                                                    class="shortcut-icon icon-file"></i><span class="shortcut-label">Notes</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-picture"></i> <span class="shortcut-label">Photos</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-tag"></i><span class="shortcut-label">Tags</span> </a> </div>
+                                        class="shortcut-label">应用</span> </a><a href="javascript:;" class="shortcut"><i
+                                            class="shortcut-icon icon-bookmark"></i><span class="shortcut-label">书签</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">报告</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-comment"></i><span class="shortcut-label">聊天</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-user"></i><span
+                                                class="shortcut-label">用户</span> </a><a href="javascript:;" class="shortcut"><i
+                                                    class="shortcut-icon icon-file"></i><span class="shortcut-label">笔记</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-picture"></i> <span class="shortcut-label">相册</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-tag"></i><span class="shortcut-label">日志</span> </a> </div>
               <!-- /shortcuts -->
             </div>
             <!-- /widget-content -->
@@ -143,7 +146,7 @@
           <!-- /widget -->
           <div class="widget">
             <div class="widget-header"> <i class="icon-signal"></i>
-              <h3> Area Chart Example</h3>
+              <h3>学习单词数据</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
@@ -155,7 +158,7 @@
           <!-- /widget -->
           <div class="widget widget-table action-table">
             <div class="widget-header"> <i class="icon-th-list"></i>
-              <h3>A Table Example</h3>
+              <h3>好友</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
@@ -260,7 +263,7 @@
 <script>
 
         var lineChartData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月"],
             datasets: [
 				{
 				    fillColor: "rgba(220,220,220,0.5)",

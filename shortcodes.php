@@ -36,7 +36,7 @@
 									<fieldset>
 
 										<div class="control-group">
-											<label class="control-label" for="username">Username</label>
+											<label class="control-label" for="username">用户名</label>
 											<div class="controls">
 												<input type="text" class="span6 disabled" id="username" value="Example" disabled>
 												<p class="help-block">Your username is for logging in and cannot be changed.</p>
@@ -45,23 +45,15 @@
 
 
 										<div class="control-group">
-											<label class="control-label" for="firstname">First Name</label>
+											<label class="control-label" for="firstname">名字</label>
 											<div class="controls">
-												<input type="text" class="span6" id="firstname" value="John">
+												<input type="text" class="span6" id="name" value="John">
 											</div> <!-- /controls -->
 										</div> <!-- /control-group -->
 
 
 										<div class="control-group">
-											<label class="control-label" for="lastname">Last Name</label>
-											<div class="controls">
-												<input type="text" class="span6" id="lastname" value="Donga">
-											</div> <!-- /controls -->
-										</div> <!-- /control-group -->
-
-
-										<div class="control-group">
-											<label class="control-label" for="email">Email Address</label>
+											<label class="control-label" for="email">邮箱地址</label>
 											<div class="controls">
 												<input type="text" class="span4" id="email" value="john.donga@by EGrappler">
 											</div> <!-- /controls -->
@@ -71,7 +63,7 @@
 										<br /><br />
 
 										<div class="control-group">
-											<label class="control-label" for="password1">Password</label>
+											<label class="control-label" for="password1">密码</label>
 											<div class="controls">
 												<input type="password" class="span4" id="password1" value="thisispassword">
 											</div> <!-- /controls -->
@@ -79,7 +71,7 @@
 
 
 										<div class="control-group">
-											<label class="control-label" for="password2">Confirm</label>
+											<label class="control-label" for="password2">重新输入</label>
 											<div class="controls">
 												<input type="password" class="span4" id="password2" value="thisispassword">
 											</div> <!-- /controls -->

@@ -228,7 +228,7 @@ var pieData = [
         color: "#584A5E"
             }
         ];
-                var myPolarArea = new Chart(document.getElementById("line-chart").getContext("2d")).PolarArea(chartData);
+var myPolarArea = new Chart(document.getElementById("line-chart").getContext("2d")).PolarArea(chartData);
 var xmlHttp;
 function showUser()
 {

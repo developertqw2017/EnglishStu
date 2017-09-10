@@ -1,4 +1,5 @@
 
+
 <div class="main">
   <div class="main-inner">
     <div class="container">
@@ -260,6 +261,68 @@
 
 <script src="js/base.js"></script>
 <script>
+var xmlHttp;
+function showData()
+{
+    xmlHttp=GetXmlHttpObject();
+    if (xmlHttp==null)
+    {
+        alert ("Browser does not support HTTP Request");
+        return;
+
+    }
+    var url="function/redis_59/data_index.php";
+//    var voc_value = document.getElementById("voc").value;
+//    console.log(voc_value);
+//    url=url+"?voc="+voc_value;
+    xmlHttp.onreadystatechange=stateChanged;
+    xmlHttp.open("GET",url,true);
+    xmlHttp.send(null);
+
+}
+
+function stateChanged()
+{
+    if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+    {
+        var info = xmlHttp.responseText;
+        var func = new Function("return"+info);
+        var json=func();
+        var state = document.getElementById("big_stats");
+        var class_stat = state.getElementsByClassName("value");
+        for(var i=0;i<3;i++)
+        {
+            class_stat[i].innerHTML = json[i];
+        }
+    }
+
+}
+
+function GetXmlHttpObject()
+{
+    var xmlHttp=null;
+    try
+    {
+        // Firefox, Opera 8.0+, Safari
+        xmlHttp=new XMLHttpRequest();
+
+    }
+    catch (e)
+    {
+        //Internet Explorer
+        try
+        {
+            xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+        }
+        catch (e)
+        {
+            xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    }
+    return xmlHttp;
+}
+
+showData();
 
         var lineChartData = {
             labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月"],

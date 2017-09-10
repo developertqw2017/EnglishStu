@@ -1,4 +1,4 @@
-<!-- /subnavbar -->
+
 <div class="main">
   <div class="main-inner">
     <div class="container">
@@ -13,13 +13,13 @@
               <div class="widget big-stats-container">
                 <div class="widget-content">
                   <div id="big_stats" class="cf">
-                    <div class="stat"> <i class="icon-anchor"></i> <span class="value">851</span> </div>
+                  <div class="stat"> <i class="icon-anchor"></i> <span class="value"></span> </div>
                     <!-- .stat -->
 
-                    <div class="stat"> <i class="icon-thumbs-up-alt"></i> <span class="value">423</span> </div>
+                    <div class="stat"> <i class="icon-thumbs-up-alt"></i> <span class="value"></span> </div>
                     <!-- .stat -->
 
-                    <div class="stat"> <i class="icon-twitter-sign"></i> <span class="value">922</span> </div>
+                    <div class="stat"> <i class="icon-twitter-sign"></i> <span class="value"></span> </div>
                     <!-- .stat -->
 
                     <div class="stat"> <i class="icon-bullhorn"></i> <span class="value">25%</span> </div>
@@ -37,8 +37,8 @@
               <h3> 日程</h3>
             </div>
             <!-- /widget-header -->
-            <div class="widget-content">
-                  <h3 class="bigstats">The mediocre teacher tells. The good teacher explains. The superior teacher demonstrates. The great teacher inspires.
+            <div class="widget-content" style="padding:20px">
+                  <h3 class="bigstats" style="font-family:华文细黑">The mediocre teacher tells. The good teacher explains. The superior teacher demonstrates. The great teacher inspires.
 <br/>平庸的老师向人告知，不错的老师向人解释，优秀的老师向人演示，伟大的老师给人启迪。</h3>
                     <span style="float:right;font-size:16px;color:#209e85">--William Ward</span>
 
@@ -126,7 +126,6 @@
           <!-- /widget -->
         </div>
         <!-- /span6 -->
-        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
         <div class="span6">
           <div class="widget">
             <div class="widget-header"> <i class="icon-bookmark"></i>

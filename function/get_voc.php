@@ -24,7 +24,9 @@ if($result->num_rows > 0){
             while($row1 = $result1->fetch_assoc() )
             {
                 if($i<4){
-                echo "<div>{$row1["exm_sentence"]}</div>";
+
+                echo "<br/><br/>";
+                echo "<div><h3>{$row1["exm_sentence"]}</h3></div>";
                 echo "<div>{$row1["sen_translation"]}</div>";
                 }
                 $i =$i + 1;

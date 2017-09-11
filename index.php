@@ -14,16 +14,16 @@
               <div class="widget big-stats-container">
                 <div class="widget-content">
                   <div id="big_stats" class="cf">
-                  <div class="stat"> <i class="icon-anchor"></i> <span class="value"></span> </div>
+                  <div class="stat"> <i class="icon-check"></i> <span class="value"></span> </div>
                     <!-- .stat -->
 
-                    <div class="stat"> <i class="icon-thumbs-up-alt"></i> <span class="value"></span> </div>
+                    <div class="stat"> <i class="icon-list-alt"></i> <span class="value"></span> </div>
                     <!-- .stat -->
 
-                    <div class="stat"> <i class="icon-twitter-sign"></i> <span class="value"></span> </div>
+                    <div class="stat"> <i class="icon-volume-up"></i> <span class="value"></span> </div>
                     <!-- .stat -->
 
-                    <div class="stat"> <i class="icon-bullhorn"></i> <span class="value">25%</span> </div>
+                    <div class="stat"> <i class="icon-exclamation-sign"></i> <span class="value">25%</span> </div>
                     <!-- .stat -->
                   </div>
                 </div>
@@ -296,7 +296,7 @@ function stateChanged()
             class_stat[i].innerHTML = json[i][0];
         }
         var lineChartData = {
-            labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月"],
+            labels: ["9.5", "9.6", "9.7", "9.8", "9.9", "9.10", "9.11"],
             datasets: [
 				{
 				    fillColor: "rgba(220,220,220,0.5)",

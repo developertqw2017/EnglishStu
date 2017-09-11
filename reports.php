@@ -9,7 +9,7 @@
             <div class="span8">
 
             <div class="info-box">
- <div class="img-news-display"><a href="/news/articles/xtres"><img style="max-width:100%;overflow:hidden" src="https://media-image1.baydn.com/da6090a5609701a672ee86efb6a72ae95ff92a544db2cff3361ef4a62fd7f202.png" alt="文章图片"><div class="img-news-info"><p class="img-news-meta"><span><!-- react-text: 1519 -->难度：<!-- /react-text --><!-- react-text: 1520 -->高考 四级<!-- /react-text --></span><span><!-- react-text: 1522 -->单词：<!-- /react-text --><!-- react-text: 1523 -->173<!-- /react-text --></span><span><!-- react-text: 1525 -->读后感：<!-- /react-text --><!-- react-text: 1526 -->428<!-- /react-text --></span></p><p class="img-news-title">1 dead, 31 hospitalized for food poisoning in NW China</p></div></a></div>
+ <div class="img-news-display"><a href="https://www.shanbay.com/news/articles/bchdcn"><img style="max-width:100%;overflow:hidden" src="https://media-image1.baydn.com/da6090a5609701a672ee86efb6a72ae95ff92a544db2cff3361ef4a62fd7f202.png" alt="文章图片"><div class="img-news-info" style="position:relative;top:-60px"><h2 class="img-news-meta"><span><!-- react-text: 1519 -->难度：<!-- /react-text --><!-- react-text: 1520 -->高考 四级<!-- /react-text --></span><span><!-- react-text: 1522 -->单词：<!-- /react-text --><!-- react-text: 1523 -->173<!-- /react-text --></span><span><!-- react-text: 1525 -->读后感：<!-- /react-text --><!-- react-text: 1526 -->428<!-- /react-text --></span></h2><h3 class="img-news-title">1 dead, 31 hospitalized for food poisoning in NW China</h3></div></a></div>
 
              </div>
 

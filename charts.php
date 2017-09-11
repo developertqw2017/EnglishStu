@@ -20,7 +20,7 @@ function action_to1(page){
                             <div class="widget-header">
                                 <i class="icon-bar-chart"></i>
                                 <h3>
-                                    Bar Chart</h3>
+                                    </h3>
                                     <input type="text" class="search-query" placeholder="查词" name="voc" id="voc" value="">
                                     <button class="add-on search-submited" id = "search_voc" onclick="showUser()"><i class="icon-search"></i></button>
                             </div>
@@ -73,7 +73,7 @@ function action_to1(page){
                             <div class="widget-header">
                                 <i class="icon-bar-chart"></i>
                                 <h3>
-                                    Donut Chart</h3>
+                                    书签</h3>
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content">
@@ -88,7 +88,7 @@ function action_to1(page){
                             <div class="widget-header">
                                 <i class="icon-bar-chart"></i>
                                 <h3>
-                                    A Chart</h3>
+                                    应用</h3>
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content">
@@ -114,121 +114,6 @@ function action_to1(page){
 ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 <script>
-var doughnutData = [
-{
-    value: 30,
-        color: "#F7464A"
-                },
-{
-    value: 50,
-        color: "#46BFBD"
-                },
-{
-    value: 100,
-        color: "#FDB45C"
-                },
-{
-    value: 40,
-        color: "#949FB1"
-                },
-{
-    value: 120,
-        color: "#4D5360"
-                }
-
-            ];
-
-        var myDoughnut = new Chart(document.getElementById("donut-chart").getContext("2d")).Doughnut(doughnutData);
-
-
-        var lineChartData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-                datasets: [
-{
-    fillColor: "rgba(220,220,220,0.5)",
-        strokeColor: "rgba(220,220,220,1)",
-        pointColor: "rgba(220,220,220,1)",
-        pointStrokeColor: "#fff",
-        data: [65, 59, 90, 81, 56, 55, 40]
-                },
-{
-    fillColor: "rgba(151,187,205,0.5)",
-        strokeColor: "rgba(151,187,205,1)",
-        pointColor: "rgba(151,187,205,1)",
-        pointStrokeColor: "#fff",
-        data: [28, 48, 40, 19, 96, 27, 100]
-                }
-            ]
-
-        }
-
-        var myLine = new Chart(document.getElementById("area-chart").getContext("2d")).Line(lineChartData);
-
-
-        var barChartData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-                datasets: [
-{
-    fillColor: "rgba(220,220,220,0.5)",
-        strokeColor: "rgba(220,220,220,1)",
-        data: [65, 59, 90, 81, 56, 55, 40]
-                },
-{
-    fillColor: "rgba(151,187,205,0.5)",
-        strokeColor: "rgba(151,187,205,1)",
-        data: [28, 48, 40, 19, 96, 27, 100]
-                }
-            ]
-
-        }
-
-var myLine = new Chart(document.getElementById("bar-chart").getContext("2d")).Bar(barChartData);
-
-var pieData = [
-{
-    value: 30,
-        color: "#F38630"
-                },
-{
-    value: 50,
-        color: "#E0E4CC"
-                },
-{
-    value: 100,
-        color: "#69D2E7"
-                }
-
-            ];
-
-                var myPie = new Chart(document.getElementById("pie-chart").getContext("2d")).Pie(pieData);
-
-                var chartData = [
-{
-    value: Math.random(),
-        color: "#D97041"
-            },
-{
-    value: Math.random(),
-        color: "#C7604C"
-            },
-{
-    value: Math.random(),
-        color: "#21323D"
-            },
-{
-    value: Math.random(),
-        color: "#9D9B7F"
-            },
-{
-    value: Math.random(),
-        color: "#7D4F6D"
-            },
-{
-    value: Math.random(),
-        color: "#584A5E"
-            }
-        ];
-var myPolarArea = new Chart(document.getElementById("line-chart").getContext("2d")).PolarArea(chartData);
 var xmlHttp;
 function showUser()
 {

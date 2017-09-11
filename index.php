@@ -56,68 +56,68 @@
             <!-- /widget-header -->
             <div class="widget-content">
               <ul class="messages_layout">
-                <li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar1.png"/></a>
+                <li class="from_user left"> <a href="#" class="avatar"><img width="50px" hight="50px" src="http://ww3.sinaimg.cn/large/0060lm7Tly1fjfgh731jdj30gr0grwlf.jpg"/></a>
                   <div class="message_wrap"> <span class="arrow"></span>
-                    <div class="info"> <a class="name">John Smith</a> <span class="time">1 hour ago</span>
+                    <div class="info"> <a class="name">梁非凡</a> <span class="time">1 小时前</span>
                       <div class="options_arrow">
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
-                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Reply</a></li>
-                            <li><a href="#"><i class=" icon-trash icon-large"></i> Delete</a></li>
-                            <li><a href="#"><i class=" icon-share icon-large"></i> Share</a></li>
+                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+                            <li><a href="#"><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
                       </div>
                     </div>
-                    <div class="text"> As an interesting side note, as a head without a body, I envy the dead. There's one way and only one way to determine if an animal is intelligent. Dissect its brain! Man, I'm sore all over. I feel like I just went ten rounds with mighty Thor. </div>
+                    <div class="text">当呢度游乐场啊！啊？！咁中意玩啊俾你地玩啊。落下面玩跑步，跑完20个圈之后再玩掌上压，玩够100下。 去！！ </div>
                   </div>
                 </li>
                 <li class="by_myself right"> <a href="#" class="avatar"><img src="img/message_avatar2.png"/></a>
                   <div class="message_wrap"> <span class="arrow"></span>
-                    <div class="info"> <a class="name">Bender (myself) </a> <span class="time">4 hours ago</span>
+                    <div class="info"> <a class="name">niconico </a> <span class="time">4 小时前</span>
                       <div class="options_arrow">
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
-                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Reply</a></li>
-                            <li><a href="#"><i class=" icon-trash icon-large"></i> Delete</a></li>
-                            <li><a href="#"><i class=" icon-share icon-large"></i> Share</a></li>
+                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+                            <li><a href="#"><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
                       </div>
                     </div>
-                    <div class="text"> All I want is to be a monkey of moderate intelligence who wears a suit… that's why I'm transferring to business school! I had more, but you go ahead. Man, I'm sore all over. I feel like I just went ten rounds with mighty Thor. File not found. </div>
+                    <div class="text"> <img width="" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505109081280&di=d4bfc441042bfc73364f86af9ca1601a&imgtype=0&src=http%3A%2F%2Fwww.xz7.com%2Fup%2F2017-8%2F2017891713542540.jpg"> </div>
                   </div>
                 </li>
-                <li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar1.png"/></a>
+                <li class="from_user left"> <a href="#" class="avatar"><img width="50px" src="http://ww3.sinaimg.cn/large/0060lm7Tly1fjfgh731jdj30gr0grwlf.jpg"/></a>
                   <div class="message_wrap"> <span class="arrow"></span>
-                    <div class="info"> <a class="name">Celeste Holm </a> <span class="time">1 Day ago</span>
+                    <div class="info"> <a class="name">梁非凡 </a> <span class="time">1天前</span>
                       <div class="options_arrow">
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
-                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Reply</a></li>
-                            <li><a href="#"><i class=" icon-trash icon-large"></i> Delete</a></li>
-                            <li><a href="#"><i class=" icon-share icon-large"></i> Share</a></li>
+                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+                            <li><a href="#"><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
                       </div>
                     </div>
-                    <div class="text"> And I'd do it again! And perhaps a third time! But that would be it. Are you crazy? I can't swallow that. And I'm his friend Jesus. No, I'm Santa Claus! And from now on you're all named Bender Jr. </div>
+                    <div class="text">讲咗大晒啊？讲俾我秘书听想坐我位就坐我位啊？讲俾秘书听我老婆要做二奶就做二奶啊？ 系咪咁啊？ </div>
                   </div>
                 </li>
-                <li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar2.png"/></a>
+                <li class="from_user left"> <a href="#" class="avatar"><img width="50px" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505704540&di=748841072b24c2d676848a41388507ef&imgtype=jpg&er=1&src=http%3A%2F%2Fi1.hdslb.com%2F300_300%2Fvideo%2Fcd%2Fcde208de23b41af4f19b60229b0acfdb.jpg"/></a>
                   <div class="message_wrap"> <span class="arrow"></span>
-                    <div class="info"> <a class="name">Mark Jobs </a> <span class="time">2 Days ago</span>
+                    <div class="info"> <a class="name">刘醒 </a> <span class="time">2 天前</span>
                       <div class="options_arrow">
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
-                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Reply</a></li>
-                            <li><a href="#"><i class=" icon-trash icon-large"></i> Delete</a></li>
-                            <li><a href="#"><i class=" icon-share icon-large"></i> Share</a></li>
+                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+                            <li><a href="#"><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
                       </div>
                     </div>
-                    <div class="text"> That's the ONLY thing about being a slave. Now, now. Perfectly symmetrical violence never solved anything. Uh, is the puppy mechanical in any way? As an interesting side note, as a head without a body, I envy the dead. </div>
+                    <div class="text"> 报告非凡哥，警署有规定嘎， 警员屋企有紧要事，有权请事假嘎。 </div>
                   </div>
                 </li>
               </ul>
@@ -158,42 +158,42 @@
           <!-- /widget -->
           <div class="widget widget-table action-table">
             <div class="widget-header"> <i class="icon-th-list"></i>
-              <h3>好友</h3>
+              <h3>资源</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
               <table class="table table-striped table-bordered">
                 <thead>
                   <tr>
-                    <th> Free Resource </th>
+                    <th> 价目 </th>
                     <th> Download</th>
                     <th class="td-actions"> </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td> Fresh Web Development Resources </td>
-                    <td> http://www.by EGrappler/ </td>
+                    <td>免费  </td>
+                    <td> http://120.76.140.147/test/frtp_1_admintemplate/header.php </td>
                     <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
                   <tr>
-                    <td> Fresh Web Development Resources </td>
-                    <td> http://www.by EGrappler/ </td>
+                    <td> 免费 </td>
+                    <td> http://120.76.140.147/test/frtp_1_admintemplate/header.php </td>
                     <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
                   <tr>
-                    <td> Fresh Web Development Resources </td>
-                    <td> http://www.by EGrappler/ </td>
+                    <td> 免费</td>
+                    <td> http://120.76.140.147/test/frtp_1_admintemplate/header.php </td>
                     <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
                   <tr>
-                    <td> Fresh Web Development Resources </td>
-                    <td> http://www.by EGrappler/ </td>
+                    <td> 免费 </td>
+                    <td> http://120.76.140.147/test/frtp_1_admintemplate/header.php </td>
                     <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
                   <tr>
-                    <td> Fresh Web Development Resources </td>
-                    <td> http://www.by EGrappler/ </td>
+                    <td> 免费 </td>
+                    <td> http://120.76.140.147/test/frtp_1_admintemplate/header.php</td>
                     <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
 

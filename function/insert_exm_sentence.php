@@ -2,10 +2,8 @@
 require_once 'config.php';
 $voc_in = $_GET["voc_sen"];
 $sentence = $_GET["sentence_in"];
-echo $sentence;
 $sql = "select m.voc, n.exm_sentence,n.exm_sentence_id from voc_level m, exm_sentence n where m.voc_id = n.exm_sentence_id and m.voc = '{$voc_in}'";
 $result = $conn->query($sql);
-echo $sql;
 if($result)
 {
 
@@ -15,12 +13,13 @@ if($result)
     {
         while($row = $result1->fetch_assoc())
         {
-            echo $_GET["sen_insert"],$row["exm_sentence_id"];
             $sql = "insert exm_sentence values('{$sentence}','gafdagadf',{$row["voc_id"]})";
-            echo $sql;
-            $conn->query($sql);
+            $result2 = $conn->query($sql);
+            if($result2){
             echo "添加成功";
-
+           }else{
+                echo "例句已有";
+            }
 }
 
 }else{

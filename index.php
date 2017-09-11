@@ -280,6 +280,7 @@ function showData()
     xmlHttp.send(null);
 
 }
+var json;
 
 function stateChanged()
 {
@@ -287,43 +288,13 @@ function stateChanged()
     {
         var info = xmlHttp.responseText;
         var func = new Function("return"+info);
-        var json=func();
+        json=func();
         var state = document.getElementById("big_stats");
-        var class_stat = state.getElementsByClassName("value");
+        class_stat = state.getElementsByClassName("value");
         for(var i=0;i<3;i++)
         {
-            class_stat[i].innerHTML = json[i];
+            class_stat[i].innerHTML = json[i][0];
         }
-    }
-
-}
-
-function GetXmlHttpObject()
-{
-    var xmlHttp=null;
-    try
-    {
-        // Firefox, Opera 8.0+, Safari
-        xmlHttp=new XMLHttpRequest();
-
-    }
-    catch (e)
-    {
-        //Internet Explorer
-        try
-        {
-            xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
-        }
-        catch (e)
-        {
-            xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
-        }
-    }
-    return xmlHttp;
-}
-
-showData();
-
         var lineChartData = {
             labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月"],
             datasets: [
@@ -332,7 +303,7 @@ showData();
 				    strokeColor: "rgba(220,220,220,1)",
 				    pointColor: "rgba(220,220,220,1)",
 				    pointStrokeColor: "#fff",
-				    data: [65, 59, 90, 81, 56, 55, 40]
+				    data: [65, 59, 90, 81, 113, 55, 40]
 				},
 				{
 				    fillColor: "rgba(151,187,205,0.5)",
@@ -344,6 +315,9 @@ showData();
 			]
 
         }
+        lineChartData.datasets[0].data  =json[0];
+        lineChartData.datasets[1].data = json[2];
+        console.log(lineChartData["datasets"][0]["data"]);
 
         var myLine = new Chart(document.getElementById("area-chart").getContext("2d")).Line(lineChartData);
 
@@ -442,4 +416,35 @@ showData();
           ]
         });
       });
+    }
+
+}
+
+function GetXmlHttpObject()
+{
+    var xmlHttp=null;
+    try
+    {
+        // Firefox, Opera 8.0+, Safari
+        xmlHttp=new XMLHttpRequest();
+
+    }
+    catch (e)
+    {
+        //Internet Explorer
+        try
+        {
+            xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+        }
+        catch (e)
+        {
+            xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    }
+    return xmlHttp;
+}
+
+showData();
+
+
     </script><!-- /Calendar -->

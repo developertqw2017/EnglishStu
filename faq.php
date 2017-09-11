@@ -12,7 +12,7 @@
 
 					<div class="widget-content">
 
-						<a href="javascript:;" class="btn btn-large btn-success btn-support-ask">Ask A Question</a>
+						<a  href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=Czk6Pz88MjI9OjhLenolaGRm" class="btn btn-large btn-success btn-support-ask">Ask A Question</a>
 
 
 					</div> <!-- /widget-content -->

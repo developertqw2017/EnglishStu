@@ -63,7 +63,7 @@
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
                             <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
-                            <li><a href="#"><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a onclick=deleteCom(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
                             <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
@@ -79,7 +79,7 @@
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
                             <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
-                            <li><a href="#"><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a onclick=deleteCom(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
                             <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
@@ -95,7 +95,7 @@
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
                             <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
-                            <li><a href="#"><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a onclick=deleteCom(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
                             <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
@@ -111,7 +111,7 @@
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
                             <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
-                            <li><a href="#"><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a onclick=deleteCom(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
                             <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
@@ -174,27 +174,27 @@
                   <tr>
                     <td>免费  </td>
                     <td> http://120.76.140.147/test/frtp_1_admintemplate/header.php </td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a onclick=deleteresour(this) class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
                   <tr>
                     <td> 免费 </td>
                     <td> http://120.76.140.147/test/frtp_1_admintemplate/header.php </td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a onclick=deleteresour(this) class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
                   <tr>
                     <td> 免费</td>
                     <td> http://120.76.140.147/test/frtp_1_admintemplate/header.php </td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a onclick=deleteresour(this) class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
                   <tr>
                     <td> 免费 </td>
                     <td> http://120.76.140.147/test/frtp_1_admintemplate/header.php </td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a  onclick=deleteresour(this) class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
                   <tr>
                     <td> 免费 </td>
                     <td> http://120.76.140.147/test/frtp_1_admintemplate/header.php</td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a onclick=deleteresour(this)  class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
 
                 </tbody>
@@ -445,6 +445,13 @@ function GetXmlHttpObject()
 }
 
 showData();
-
+function deleteCom(a)
+{
+    a.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.display="none";
+}
+function deleteresour(a)
+{
+    a.parentNode.parentNode.style.display="none";
+}
 
     </script><!-- /Calendar -->

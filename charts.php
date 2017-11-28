@@ -21,6 +21,14 @@ function action_to1(page){
                                 <i class="icon-bar-chart"></i>
                                 <h3>
                                     </h3>
+                                <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+                                <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+                                <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+                                <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+                                <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+                                </ul>
+                                </div>
+
                                     <input type="text" class="search-query" placeholder="查词" name="voc" id="voc" value="">
                                     <button class="add-on search-submited" id = "search_voc" onclick="showUser()"><i class="icon-search"></i></button>
                             </div>
@@ -41,6 +49,14 @@ function action_to1(page){
                             <div class="widget-header">
                                 <i class="icon-bar-chart"></i>
                                 <h3>更多例句</h3>
+                                <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+            <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+            </ul>
+            </div>
+
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content">
@@ -56,6 +72,14 @@ function action_to1(page){
                                 <i class="icon-bar-chart"></i>
                                 <h3>
                                     笔记</h3>
+            <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+            <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+            </ul>
+            </div>
+
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content">
@@ -74,6 +98,15 @@ function action_to1(page){
                                 <i class="icon-bar-chart"></i>
                                 <h3>
                                     书签</h3>
+
+            <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+            <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+            </ul>
+            </div>
+
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content">
@@ -89,6 +122,14 @@ function action_to1(page){
                                 <i class="icon-bar-chart"></i>
                                 <h3>
                                     应用</h3>
+            <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+            <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+            </ul>
+            </div>
+
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content">

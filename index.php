@@ -8,6 +8,13 @@
           <div class="widget widget-nopad">
             <div class="widget-header"> <i class="icon-list-alt"></i>
               <h3>今日已完成</h3>
+            <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+            <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+            </ul>
+            </div>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
@@ -36,6 +43,14 @@
           <div class="widget widget-nopad">
             <div class="widget-header"> <i class="icon-list-alt"></i>
               <h3> 日程</h3>
+            <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+            <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+            </ul>
+            </div>
+
             </div>
             <!-- /widget-header -->
             <div class="widget-content" style="padding:20px">
@@ -52,6 +67,14 @@
           <div class="widget">
             <div class="widget-header"> <i class="icon-file"></i>
               <h3> 评论</h3>
+            <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+            <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+            </ul>
+            </div>
+
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
@@ -131,6 +154,14 @@
           <div class="widget">
             <div class="widget-header"> <i class="icon-bookmark"></i>
               <h3>快捷</h3>
+            <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+            <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+            </ul>
+            </div>
+
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
@@ -147,6 +178,14 @@
           <div class="widget">
             <div class="widget-header"> <i class="icon-signal"></i>
               <h3>学习单词数据</h3>
+            <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+            <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+            </ul>
+            </div>
+
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
@@ -159,6 +198,14 @@
           <div class="widget widget-table action-table">
             <div class="widget-header"> <i class="icon-th-list"></i>
               <h3>资源</h3>
+            <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+            <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+            </ul>
+            </div>
+
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
@@ -206,6 +253,14 @@
           <div class="widget widget-nopad">
             <div class="widget-header"> <i class="icon-list-alt"></i>
               <h3> 计划·行程</h3>
+            <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"><i class=" icon-caret-down"></i> &nbsp</a>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+            <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
+            <li><a onclick="deleteCom(this)"><i class=" icon-trash icon-large"></i> 删除</a></li>
+            <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
+            </ul>
+            </div>
+
             </div>
             <!-- /widget-header -->
             <div class="widget-content">

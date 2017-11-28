@@ -7,6 +7,9 @@ Bootstrap Admin Template
 
 /** Base Body Styles **/
 body{ background: url(../../img/body-bg.png); color:#838383; font: 13px/1.7em 'Open Sans';}
+.widget{
+    box-shadow:4px 2px 6px #333333;
+}
 
 
 .account-container {

@@ -1,0 +1,43 @@
+.slogan>img {
+	height: 120px;
+	width: auto;
+	padding-left: 70px;
+	padding-top: 30px;
+}
+.slogan {
+	height: 180px;
+}
+.widget {
+	width: 80%;
+	margin:0 auto 50px; 
+}
+.widget_header>h3 {
+	display: inline;
+}
+.search {
+	float: right;
+	position: relative;
+	top: 5px;
+}
+.pic_search {
+	background-image: url('img/search.png');
+	width: 28px;
+	height: 28px;
+	margin-left: -3px;
+}
+.widget-content {
+	height: 400px;
+}
+.widget-content li{
+	line-height: 35px;
+	font-size: 15px;
+}
+.write {
+	float: right;
+	padding-right: 10px;
+}
+.date {
+	float: right;
+	padding-right: 20px;
+}
+

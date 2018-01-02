@@ -1,5 +1,3 @@
-
-
 <div class="main">
   <div class="main-inner">
     <div class="container">
@@ -169,7 +167,7 @@
                                         class="shortcut-label">应用</span> </a><a href="javascript:;" class="shortcut"><i
                                             class="shortcut-icon icon-bookmark"></i><span class="shortcut-label">书签</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">报告</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-comment"></i><span class="shortcut-label">聊天</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-user"></i><span
                                                 class="shortcut-label">用户</span> </a><a href="javascript:;" class="shortcut"><i
-                                                    class="shortcut-icon icon-file"></i><span class="shortcut-label">笔记</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-picture"></i> <span class="shortcut-label">相册</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-tag"></i><span class="shortcut-label">日志</span> </a> </div>
+                                                    class="shortcut-icon icon-file"></i><span class="shortcut-label">笔记</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-picture"></i> <span class="shortcut-label">相册</span> </a><a href="page_rizhi/rizhi.html" class="shortcut"> <i class="shortcut-icon icon-tag"></i><span class="shortcut-label">日志</span> </a> </div>
               <!-- /shortcuts -->
             </div>
             <!-- /widget-content -->

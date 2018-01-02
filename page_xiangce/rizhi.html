@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的日志</title>
+<link href="css/rizhi.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="month">
+        <ul>    
+                <li class="prev"><a href="#" onClick="previous()" style="text-decoration:none;"><</a></li>
+                <li class="next"><a href="#" onClick="next()" style="text-decoration:none;">></a></li>
+                <li style="text-align:center" id="y_m" style="width:200px"></li>            
+        </ul>
+    </div>
+        <ul class="weekdays">
+         <li>Su</li><li>Mo</li><li>Tu</li><li>We</li><li>Th</li><li>Fr</li><li>Sa</li>
+        </ul>
+    <div id="calendar"></div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    var Calendar={  
+    _today:new Date(),  
+    _date:new Date().getDate(),  
+    _day:new Date().getDay(),  
+    _month:new Date().getMonth()+1,  
+    _year:new Date().getFullYear(),  
+    _C_year:new Date().getFullYear(),  
+    _C_month:new Date().getMonth()+1,  
+    isLeap:function(){  
+        var year=this._C_year;  
+        if(year%4==0&&year%100>0)return true;  
+        if(year%400==0&&year%3200>0)return true;  
+        return false;  
+    },  
+    getLen:function(){  
+        if(this._C_month==2){  
+            if(this.isLeap())return 29;  
+            return 28;  
+        }  
+        if(this._C_month<8){  
+            if(this.C_month%2>0)return 31;  
+            return 30;  
+        }  
+        if(this._C_month%2>0)return 30;  
+        return 31;  
+    },  
+    getCalendar:function(){  
+        var len=this.getLen();  
+        var d=new Date(this._C_year,this._C_month-1,1);  
+        var dfw=d.getDay();  
+        var arr=new Array();  
+        var tem=0;  
+        var str="";
+        var a = document.getElementById("y_m");
+        var y = d.getFullYear();
+        var m = d.getMonth()+1;
+        a.innerHTML=y+"年"+m+"月";   
+        for(var i=0;i<6;i++){  
+        arr[i]=new Array();  
+        for(var j=0;j<7;j++){  
+            tem++;  
+            if(tem-dfw>0&&tem-dfw<=len)arr[i][j]=tem-dfw;  
+            else arr[i][j]="&nbsp;";  
+        }  
+    }  
+        str+='<ul class="days" width="1580">';    
+        for(var k=0;k<6;k++){  
+            str+='<li><a href="" onclick="setSum(this.innerText)" id="btn" style="text-decoration:none" >';  
+            str+=arr[k].join('</a></li><li><a href="" style="text-decoration:none" id="btn" onclick="setSum(this.innerText)" >');     
+            str+='</a></li>'; 
+           
+        }  
+        str+='</ul>';
+        return str;   
+    },  
+    nextMonth:function(){  
+    if(this._C_month==12){this._C_year++;this._C_month=0;}  
+    this._C_month++;  
+    },  
+    nextYear:function(){  
+    this._C_year++;  
+    },  
+    previousMonth:function(){  
+    if(this._C_month==1){this._C_year--;this._C_month=13;}  
+    this._C_month--;  
+    },  
+    previousYear:function(){  
+    this._C_year--;  
+    },
+    }  
+    function next(){  
+    Calendar.nextMonth();  
+    document.getElementById('calendar').innerHTML=Calendar.getCalendar();  
+    }  
+    function previous(){  
+    Calendar.previousMonth();  
+    document.getElementById('calendar').innerHTML=Calendar.getCalendar();  
+    }  
+    document.getElementById('calendar').innerHTML=Calendar.getCalendar(); 
+    function setSum(aStr){
+       　alert('您点的是'+aStr+'号');
+    }          
+    </script>

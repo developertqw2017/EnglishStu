@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html；charset=utf-8">
+	<title>Emoji English</title>
+	<link rel="stylesheet" type="text/css" href="./page_index/page.css">
+</head>
+<body style="background-color:#F6F8F8; ">
+    <div style="width: 90%;margin: auto;">
+    	<div class="head">            <!--右上角用户信息-->
+    		<a href="#">登录</a>
+    		<span style="margin: 0 10px;">|</span>
+    		<a href="#">注册</a>
+    	</div>
+    	<div class="logo">       <!--logo主体-->
+    		<img src="./page_index/logo.png" width="100" height="100">
+    	    </br>
+    			<a href="#">单词</a>
+    			<a href="#">听力</a>
+    			<a href="#">口语</a>
+    			<a href="#">阅读</a>
+    			<a href="#">写作</a>
+    	</div>
+    	<div>        <!--网页主体，包括轮播图部分和大致内容介绍-->
+    		<div class="container">
+                <div class="wrap" style="left: -1200px;">
+                    <img src="./page_index/setence.png" alt="">
+                    <img src="./page_index/word.png" alt="">
+                    <img src="./page_index/listen.png" alt="">
+                    <img src="./page_index/spoken.png" alt="">
+                    <img src="./page_index/read.png" alt="">
+                    <img src="./page_index/setence.png" alt="">
+                    <img src="./page_index/word.png" alt="">
+                </div>
+                <div class="buttons">
+                    <span class="on">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                </div>
+                <a href="javascript:;" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" class="arrow arrow_left"><</a>
+                <a href="javascript:;" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" class="arrow arrow_right">></a>
+            </div>                  			
+    	</div>
+    		<div class="submenu">    <!---小模块介绍-->
+    			<div class="submenu_1">
+    				<img src="./page_index/community.png" width="130" height="130">
+    				<h4>Emoji社区</h4>
+    				<p>学习路上，不再孤单</p>
+    				<p>Emoji就是一个大家庭</p>
+    				<p>从此，你不再孤单</p>
+    			</div>
+    			<div class="submenu_2">
+    				<img src="./page_index/test.png" width="130" height="130">
+    				<h4>考试保险</h4>
+    				<p>还在担心考试吗</p>
+    				<p>加入Emoji计划</p>
+    				<p>让你的考试不再难过</p>
+    			</div>
+    			<div class="submenu_3">
+    				<img src="./page_index/dictionary.png" width="130" height="130">
+    				<h4><a href="#">词汇书</a></h4>
+    				<p>不知道自己的词汇量</p>
+    				<p>还怎么学英语</p>
+    				<p>赶快来试试吧</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="bottom">
+    	
+    </div>
+<script>
+    var wrap = document.querySelector(".wrap");
+    var next = document.querySelector(".arrow_right");
+    var prev = document.querySelector(".arrow_left");
+    next.onclick = function () {
+      next_pic();
+    }
+    prev.onclick = function () {
+      prev_pic();
+    }
+    function next_pic () {
+      index++;
+      if(index > 4){
+        index = 0;
+      }
+      showCurrentDot();
+      var newLeft;
+      if(wrap.style.left === "-7200px"){
+        newLeft = -2400;
+      }else{
+        newLeft = parseInt(wrap.style.left)-1200;
+      }
+      wrap.style.left = newLeft + "px";
+    }
+    function prev_pic () {
+      index--;
+      if(index < 0){
+        index = 4;
+      }
+      showCurrentDot();
+      var newLeft;
+      if(wrap.style.left === "0px"){
+        newLeft = -4800;
+      }else{
+        newLeft = parseInt(wrap.style.left)+1200;
+      }
+      wrap.style.left = newLeft + "px";
+    }
+    var timer = null;
+    function autoPlay () {
+      timer = setInterval(function () {
+        next_pic();
+      },2000);
+    }
+    autoPlay();
+ 
+    var container = document.querySelector(".container");
+    container.onmouseenter = function () {
+      clearInterval(timer);
+    }
+    container.onmouseleave = function () {
+      autoPlay();  
+    }
+ 
+    var index = 0;
+    var dots = document.getElementsByTagName("span");
+    function showCurrentDot () {
+      for(var i = 0, len = dots.length; i < len; i++){
+        dots[i].className = "";
+      }
+      dots[index].className = "on";
+    }
+ 
+    for (var i = 0, len = dots.length; i < len; i++){
+      (function(i){
+        dots[i].onclick = function () {
+          var dis = index - i;
+          if(index == 4 && parseInt(wrap.style.left)!==-3000){
+            dis = dis - 5;   
+          }
+          //和使用prev和next相同，在最开始的照片5和最终的照片1在使用时会出现问题，导致符号和位数的出错，做相应地处理即可
+          if(index == 0 && parseInt(wrap.style.left)!== -600){
+            dis = 5 + dis;
+          }
+          wrap.style.left = (parseInt(wrap.style.left) + dis * 600)+"px";
+          index = i;
+          showCurrentDot();
+        }
+      })(i);      
+    }
+</script>
+</body>
+</html>

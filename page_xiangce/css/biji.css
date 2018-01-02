@@ -1,0 +1,19 @@
+
+*{padding: 0;margin: 0}
+.button {
+    background-color:#00BA8B ; 
+    border: none;
+    color: white;
+    padding: 6px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.demo0{width: 458px;padding: 20px;background:#00BA8B ;border: 1px solid #ccc;margin-left:100px;margin-top:50px;position: relative;}
+.demo1{width: 458px;padding: 20px;background:#00BA8B ;border: 1px solid #ccc;margin-left:100px;margin-top:50px;position: relative;}
+.demo1 img{width:50px;float: left;margin: -20px 0 0 -100px}
+.demo1 p{font-size: 14px;line-height: 25px}
+.demo1 span{position: absolute;right: 20px;top: 10px;font-size: 13px}

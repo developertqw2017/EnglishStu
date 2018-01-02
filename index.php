@@ -500,7 +500,7 @@ function GetXmlHttpObject()
 showData();
 function deleteCom(a)
 {
-    a.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.display="none";
+    a.parentNode.parentNode.parentNode.parentNode.parentNode.style.display="none";
 }
 function deleteresour(a)
 {

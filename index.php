@@ -84,7 +84,7 @@
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
                             <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
-                            <li><a onclick=deleteCom(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a onclick=deleteComment(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
                             <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
@@ -100,7 +100,7 @@
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
                             <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
-                            <li><a onclick=deleteCom(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a onclick=deleteComment(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
                             <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
@@ -116,7 +116,7 @@
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
                             <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
-                            <li><a onclick=deleteCom(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a onclick=deleteComment(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
                             <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
@@ -132,7 +132,7 @@
                         <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
                           <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
                             <li><a href="#"><i class=" icon-share-alt icon-large"></i> 复制</a></li>
-                            <li><a onclick=deleteCom(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
+                            <li><a onclick=deleteComment(this)><i class=" icon-trash icon-large"></i> 删除</a></li>
                             <li><a href="#"><i class=" icon-share icon-large"></i> 转发</a></li>
                           </ul>
                         </div>
@@ -500,8 +500,13 @@ function GetXmlHttpObject()
 showData();
 function deleteCom(a)
 {
+    a.parentNode.parentNode.parentNode.parentNode.parentNode.style.display="none";
+}
+function deleteComment(a)
+{
     a.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.display="none";
 }
+
 function deleteresour(a)
 {
     a.parentNode.parentNode.style.display="none";

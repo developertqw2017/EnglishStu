@@ -98,6 +98,19 @@
 
 </div>
 <script type="text/javascript">
+var sess;
+function versess()
+{
+    var xmlhttp = new XMLHttpRequest();
+    if(xmlhttp.readyState == 4 || xmlhttp.readyState == "complete"){
+        console.log(xmlhttp.responseText);
+    }
+    xmlhttp.open("POST",'http://120.76.140.147:8000/verifySession',true);
+    xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xmlhttp.withCredentials = true;
+    xmlhttp.send();
+
+}
 function action_to(page){
     var xmlhttp1 = new XMLHttpRequest();
 
